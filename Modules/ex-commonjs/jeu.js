@@ -1,4 +1,4 @@
-// importer la fonction getRandomInt
+const Random = require('./random');
 const readline = require('readline'); // importe l'API readline
 
 class Jeu {
@@ -45,3 +45,7 @@ class Jeu {
 }
 
 // exporter la classe Jeu
+exports.Jeu = Jeu;
+
+// remplace l'objet exports par Jeu
+// module.exports = Jeu;

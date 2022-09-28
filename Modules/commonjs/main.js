@@ -1,4 +1,4 @@
-// function(exports, require) {
+// function(exports, require, module, __filename, __dirname) {
 
 const MyMath = require('./my-math');
 
