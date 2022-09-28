@@ -71,6 +71,6 @@ class Jeu {
 
 const game = new Jeu({
   min: -10,
-  max: 0,
+  max: 12,
 });
 game.jouer();

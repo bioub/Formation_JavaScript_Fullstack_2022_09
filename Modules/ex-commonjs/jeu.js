@@ -1,22 +1,4 @@
-const Random = {
-  getRandom() { // équivalent à getRandom: function() {
-    return Math.random();
-  },
-  getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-  },
-  getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
-  },
-  getRandomIntInclusive(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
-  },
-}
-
+// importer la fonction getRandomInt
 const readline = require('readline'); // importe l'API readline
 
 class Jeu {
@@ -62,5 +44,4 @@ class Jeu {
   }
 }
 
-const game = new Jeu();
-game.jouer();
+// exporter la classe Jeu
