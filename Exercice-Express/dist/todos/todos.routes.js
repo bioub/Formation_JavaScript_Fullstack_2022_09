@@ -29,7 +29,7 @@ const todos_model_1 = require("./todos.model");
 const todosRoutes = (0, express_1.Router)();
 exports.todosRoutes = todosRoutes;
 todosRoutes.get('', async (req, res) => {
-    const todos = await todos_model_1.TodosModel.findAll();
+    const todos = await todos_model_1.TodosModel.find();
     res.json(todos);
 });
 todosRoutes.get('/:todoId', async (req, res) => {
