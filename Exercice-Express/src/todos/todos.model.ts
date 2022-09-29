@@ -1,9 +1,19 @@
+import { Schema, model } from 'mongoose';
+
 export interface Todo {
-  id?: number;
+ // id?: number;
   title?: string;
   completed?: boolean;
 }
 
+const todoSchema = new Schema<Todo>({
+  title: { type: String, required: [true, 'Title is mandatory'] },
+  completed: Boolean, // raccourci de { type: Boolean }
+});
+
+export const TodosModel = model<Todo>('Todo', todoSchema);
+
+/*
 export class TodosModel {
   static todos: Todo[] = [
     {
@@ -48,3 +58,4 @@ export class TodosModel {
     return Promise.resolve(newTodo);
   }
 }
+*/
