@@ -7,7 +7,7 @@ const coords = {
 
 // const x = coords.x;
 // const y = coords.y;
-// const z = coords.z;
+// const z = coords.z ?? 0;
 
 // console.log(x, y, z);
 
