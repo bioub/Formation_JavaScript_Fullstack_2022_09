@@ -1,0 +1,33 @@
+<form (submit)="doSomething($event)">
+  <!--
+    formEl.addEventListener('submit', ($event) => {
+      event.preventDefault();
+
+    })
+  -->
+  <p>
+    Username : <input type="text" [value]="user.username" (input)="user.username = $any($event.target).value" />
+  </p>
+  <!--
+    const inputEl = document.createElement('input');
+    inputEl.setAttribute('type', 'text');
+    inputEl.value = user.username;
+    // si on utilisait les value="{{user.username}}"
+    // inputEl.setAttribute('value', String(user.username));
+  -->
+  <p>
+    Is Active : <input type="checkbox" [checked]="user.isActive" (change)="user.isActive = $any($event.target).checked"  />
+  </p>
+  <!--
+    const inputEl = document.createElement('input');
+    inputEl.setAttribute('type', 'checkbox');
+    inputEl.checked = user.isActive;
+    // si on utilisait les checked="{{user.isActive}}"
+    // inputEl.setAttribute('checked', String(user.isActive));
+  -->
+  <p>
+    <button>Add</button>
+  </p>
+</form>
+
+<p>Valeur saisie : {{ user | json }}</p>

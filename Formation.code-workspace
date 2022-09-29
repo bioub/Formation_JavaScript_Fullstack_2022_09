@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "Exercice-Express"
+		},
+		{
+			"path": "hello-angular"
 		}
 	]
 }
