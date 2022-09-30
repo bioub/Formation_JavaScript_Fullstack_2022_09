@@ -8,6 +8,7 @@ import { TodosModule } from './todos/todos.module';
 import { HomeComponent } from './core/home/home.component';
 import { AboutComponent } from './core/about/about.component';
 import { NotFoundComponent } from './core/not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { NotFoundComponent } from './core/not-found/not-found.component';
     BrowserModule,
     LearningModule,
     TodosModule,
-
+    HttpClientModule,
     AppRoutingModule, // à laisser à la fin à cause la route **
   ],
   providers: [],

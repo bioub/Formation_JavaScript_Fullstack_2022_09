@@ -3,10 +3,12 @@ import { todosRoutes } from './todos/todos.routes';
 
 import { connect } from 'mongoose';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 dotenv.config();
 
 const app = express();
+app.use(cors());
 
 // Ajouter vos routes ici :
 // ...
