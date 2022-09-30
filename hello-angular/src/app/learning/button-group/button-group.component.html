@@ -1,0 +1,6 @@
+<button *ngFor="let item of items" [disabled]="value === item" (click)="select(item)">
+  {{ item }}
+  <span *ngIf="value === item">*</span>
+</button>
+
+<!-- for (const n of names) { } -->

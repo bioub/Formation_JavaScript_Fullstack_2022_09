@@ -6,6 +6,8 @@ import { CounterComponent } from './counter/counter.component';
 import { UserCreationComponent } from './user-creation/user-creation.component';
 import { ExHelloWorldComponent } from './ex-hello-world/ex-hello-world.component';
 import { ExMultiStateButtonComponent } from './ex-multi-state-button/ex-multi-state-button.component';
+import { ButtonGroupComponent } from './button-group/button-group.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -16,10 +18,12 @@ import { ExMultiStateButtonComponent } from './ex-multi-state-button/ex-multi-st
     CounterComponent,
     UserCreationComponent,
     ExHelloWorldComponent,
-    ExMultiStateButtonComponent
+    ExMultiStateButtonComponent,
+    ButtonGroupComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     LearningComponent,

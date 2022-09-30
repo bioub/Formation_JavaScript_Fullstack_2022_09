@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LearningComponent implements OnInit {
 
+  names = ['Cristina', 'Romain', 'Baptiste', 'Pierre-Matthieu'];
+  name = 'Romain'
+
   constructor() { }
 
   ngOnInit(): void {
