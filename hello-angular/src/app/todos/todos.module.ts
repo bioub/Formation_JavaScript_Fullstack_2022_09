@@ -22,7 +22,7 @@ import { FormsModule } from '@angular/forms';
     TodosRoutingModule
   ],
   exports: [
-    TodosComponent
+   // TodosComponent
   ]
 })
 export class TodosModule { }

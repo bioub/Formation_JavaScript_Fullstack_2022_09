@@ -8,6 +8,7 @@ import { ExHelloWorldComponent } from './ex-hello-world/ex-hello-world.component
 import { ExMultiStateButtonComponent } from './ex-multi-state-button/ex-multi-state-button.component';
 import { ButtonGroupComponent } from './button-group/button-group.component';
 import { FormsModule } from '@angular/forms';
+import { LearningRoutingModule } from './learning-routing.module';
 
 
 
@@ -23,10 +24,11 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
+    LearningRoutingModule,
     FormsModule
   ],
   exports: [
-    LearningComponent,
+   // LearningComponent,
   ]
 })
 export class LearningModule { }
